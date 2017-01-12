@@ -2,7 +2,7 @@ function opengios6() {
   location.href='http://gi-os6.tk/';
 }
 function opengalileo() {
-  location.href='http://galileo.ml/';
+  location.href='http://gi-os.github.io/Galileo';
 }
 function openedge() {
   location.href='http://www.gi-os.com/#!edge/c7b9';
