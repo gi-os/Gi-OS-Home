@@ -20,17 +20,17 @@ function opencodepen() {
   location.href='http://codepen.io/gi-os/';
 }
 function openmiku3() {
-  location.href='http://s.codepen.io/gi-os/debug/GNKyvG';
+  location.href='http://codepen.io/gi-os/details/GNKyvG';
 }
 function openmiku2() {
-  location.href='http://s.codepen.io/gi-os/debug/ZWQMxa';
+  location.href='http://codepen.io/gi-os/details/ZWQMxa';
 }
 function openmiku1() {
-  location.href='http://s.codepen.io/gi-os/debug/GNKyvG';
+  location.href='http://codepen.io/gi-os/details/xZdxRV/';
 
 }  
 function opengiosi() {
-  location.href='http://s.codepen.io/gi-os/debug/jrRxAy';
+  location.href='http://s.codepen.io/gi-os/details/jrRxAy';
 
 }  
 function opengithub() {
