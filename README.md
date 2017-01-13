@@ -1,5 +1,5 @@
 # Gi-OS-Home
-https://gi-os.github.io/Home/
-Projects
-I
-https://gi-os.github.io/Home/projects/I
+- Home 
+ -  https://gi-os.github.io/Home/
+- I.2
+ - https://gi-os.github.io/Home/projects/I
