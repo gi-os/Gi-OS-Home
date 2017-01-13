@@ -30,8 +30,7 @@ function openmiku1() {
 
 }  
 function opengiosi() {
-  location.href='https://gi-os.github.io/Home/projects/I
-';
+  location.href='https://gi-os.github.io/Home/projects/I';
 
 }  
 function opengithub() {
