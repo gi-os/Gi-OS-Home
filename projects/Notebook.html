@@ -1,6 +1,16 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<script src="Home/projects/Notebook.js"> </script>
-<link href="Home/projects/Notebook.css" rel="stylesheet">
+<link href="https://gi-os.github.io/Home/projects/Notebook.css" rel="stylesheet">
+<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" rel="stylesheet">
+<script src="https://gi-os.github.io/Home/projects/Notebook.js">
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</script>
+<script src="https://cdn.rawgit.com/mattboldt/typed.js/master/dist/typed.min.js">
+  
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+  
+</script>
   <style>
 .back {
   background-color: #fff;
@@ -49,3 +59,88 @@ document.getElementsByClassName('back')[0].onclick = function() {
 </div>
 
 </body>
+<script>
+  var bootup = document.getElementsByClassName('bootbox')[0];
+function loadup() {
+   bootup.classList.add('zoom');
+}
+
+
+
+$('document').ready(function() {  
+  
+  /* Wikipedia Animation */
+  $("#wiki").typed({
+		strings: ["Notebook"],
+		typeSpeed: 100,
+    backDelay: 1500,
+    loop: false
+	});
+    
+  /* Autocomplete */
+  $("#input").autocomplete({
+    source: function(request, response) {
+      $.ajax({
+        url: "http://en.wikipedia.org/w/api.php",
+        dataType: "jsonp",
+        data: {
+          'action': "opensearch",
+          'format': "json",
+          'search': request.term
+        },
+        success: function(data) {
+          response(data[1]);
+        }
+      });
+    }
+  });
+  
+  /* Search click */
+  $('#searchClick').on("click", function() {
+    event.preventDefault()
+    
+    var searchTerm = $('#input').val();
+        
+    $('form').toggleClass('open');
+    $('#searchClick').toggleClass('black-button');
+    
+    // Search / Close toggle
+    if ($("#searchClick").hasClass('black-button')) {
+      $("#searchClick").html('Close');
+    } else {
+      $("#searchClick").html('Search');
+    }
+    
+    $('#wiki').fadeToggle('fast', 'swing');
+    $('.typed-cursor').toggleClass('display-none');
+    $('#data').toggleClass('display-none');
+   
+    
+    $.ajax({
+      dataType: "jsonp",
+      url: "https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=" + searchTerm + "&limit=10&namespace=0",
+      type: "GET",
+      success: function(wikiData) {
+        
+        // Clear old results
+        $('#data').empty();
+        
+        // If no results, error
+        if (wikiData[1].length == 0) {
+          $('#data').append('<div id="search-item"><h1>Sorry, no results.</h1></div>');
+        }
+        
+        // Populate new results
+        for (var i = 1; i < wikiData[1].length; i++) {
+          for (var j = 0; j < wikiData[1].length; j++) {
+            $('#data').append('<div id="search-item"><h1><a target="_blank" href="' + wikiData[i + 2][j] + '">' + wikiData[i][j] + '</a></h1><p>' + wikiData[i + 1][j] + '</p></div>');
+          }
+        }
+      },
+      error: function() {
+        console.log('Wiki Data Error');
+      }
+    }); // Ajax
+  }); // Search click
+}); // document ready
+</script>
