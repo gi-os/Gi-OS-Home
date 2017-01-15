@@ -27,21 +27,18 @@ function openmiku2() {
 }
 function openmiku1() {
   location.href='http://s.codepen.io/gi-os/debug/GNKyvG';
-
 }  
 function opengiosi() {
   location.href='http://gi-os.github.io/Home/projects/I';
-
 }  
 function opengithub() {
   location.href='https://github.com/gi-os/';
-
-}  
-}  
-function opennotebook() {
+} 
+function openNotebook() {
   location.href='https://gi-os.github.io/Home/projects/Notebook';
-
 }  
+ 
+
 function generateDiv(){
 	var container = document.getElementById('divContainer');
 	for (var i = 0; i <15; i++) {	
