@@ -1,0 +1,51 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="Home/projects/Notebook.js"> </script>
+<link href="Home/projects/Notebook.css" rel="stylesheet">
+  <style>
+.back {
+  background-color: #fff;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transition: all .4s ease;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color:#5f5f5f;
+}
+.back:hover {
+
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transition: all .4s ease;
+  color:#30bdff;
+}
+  </style>
+  <script>
+document.getElementsByClassName('back')[0].onclick = function() {
+ location.href='https://gi-os.github.io/Gi-OS6/';
+  }  
+  </script>
+<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+
+<body class="bootbox"onload="loadup()">
+   <center> 
+<form id="form">
+
+  <h1><span id="wiki" class="typed"></span></h1>
+
+  
+  <input type="text" id="input"></input>
+  
+  <button id="searchClick" type="button">Search</button>
+
+</form>
+  </center>
+<div id="data" class="display-none">
+<!-- Wikipedia results populate here -->
+  
+</div>
+
+</body>
