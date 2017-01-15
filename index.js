@@ -39,7 +39,7 @@ function opengithub() {
 }  
 }  
 function opennotebook() {
-  location.href='http://gi-os.github.io/Home/projects/Notebook';
+  location.href='https://gi-os.github.io/Home/projects/Notebook';
 
 }  
 function generateDiv(){
