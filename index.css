@@ -154,6 +154,28 @@ nav:hover .navitem:nth-of-type(10) {
 nav:hover .navitem:nth-of-type(10) i {
 	transition: all 0.2s, margin-left 0.2s 0.5s;
 }
+nav:hover .navitem:nth-of-type(11) {
+	transition: all 0.2s, color 1s 0.525s;
+}
+
+nav:hover .navitem:nth-of-type(11) i {
+	transition: all 0.2s, margin-left 0.2s 0.525s;
+}
+nav:hover .navitem:nth-of-type(12) {
+	transition: all 0.2s, color 1s 0.55s;
+}
+
+nav:hover .navitem:nth-of-type(12) i {
+	transition: all 0.2s, margin-left 0.2s 0.55s;
+}
+nav:hover .navitem:nth-of-type(13) {
+	transition: all 0.2s, color 1s 0.575s;
+}
+
+nav:hover .navitem:nth-of-type(13) i {
+	transition: all 0.2s, margin-left 0.2s 0.575s;
+}
+
 
 body {
 	-webkit-transition: all .5s ease-in-out;
