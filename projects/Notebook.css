@@ -1,0 +1,137 @@
+.bootbox{
+  transition: all .4s ease;
+  position:relative;
+
+  background-color:#fff;
+  
+ opacity:0.0;
+
+  
+}
+hr {
+  color: #30bdff;
+background-color: #30bdff;
+height: 2px;
+  border: 0;
+  width: 80%;
+  float:left;
+}
+.bootbox.zoom{
+  transition: all .4s ease;
+  position:relative;
+
+
+    opacity:1.0;
+  
+}
+h1{
+  font-weight:300;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic);
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color:#5f5f5f;
+  font-family: Lato;
+  font-weight:300;
+}
+
+form {
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s;
+  position: relative;
+  
+  width: 350px;
+}
+
+input {
+  color:#5f5f5f;
+  height: 28px;
+  max-width: 300px;
+  border: ;
+  padding: 1px 15px;
+  text-align: right;
+}
+
+button {
+  height: 29px;
+  width: 80px;
+  background-color: #fff;
+  color: #30bdff;
+  border: none;
+  border-radius: 5px;
+}
+button:focus {
+  outline: none;
+}
+
+
+
+#data {
+  width: 60vw;
+  margin: 5vh auto;
+  
+}
+
+#search-item {
+  
+  margin: 20px 0px;
+  padding: 20px;
+  background-color: #fff;
+  color: ##5f5f5f;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  
+}
+
+a {
+  color: #19B5FE;
+  text-decoration: none;
+}
+
+.black-button {
+  background-color: #fff;
+  color: #30bdff;
+}
+
+.open {
+  margin-top: 10vh;
+}
+
+.display-none {
+  display: none;
+}
+
+.typed-cursor {
+  opacity: 0.5;
+  -webkit-animation: blink 1.2s infinite;
+          animation: blink 1.2s infinite;
+  font-weight:300;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
