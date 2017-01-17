@@ -63,10 +63,11 @@ nav:hover {
 
 nav:hover span {
 	transition: all 1s 0.25s;
+	color: rgba(255, 255, 255, 1);
 }
 
 nav:hover .navitem {
-	color: rgba(255, 255, 255, 0.8);
+	color: rgba(255, 255, 255, 1);
 }
 
 nav:hover .navitem i {
