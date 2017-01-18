@@ -58,8 +58,8 @@ nav:hover {
 	width: 260px;
 	overflow-X: auto;
 	overflow-Y: auto;
-	opacity: .8;
-	background: #969494;
+	opacity: .7;
+	background: #a0a0a0;
 }
 
 nav:hover span {
