@@ -3,6 +3,10 @@ html, body {
     overflow-x: hidden;
     transition: all .4s ease;
     overflow-y:hidden;
+        font-family:lato;
+  font-weight:300;
+}
+b{
       font-family:lato;
   font-weight:300;
 }
